@@ -2,7 +2,7 @@
 
 ## pl/sql: cursor ()
 
-## Create Table
+## 1 Create Table
 ```
 CREATE TABLE customerinfo (
     customer_id NUMBER PRIMARY KEY,
@@ -12,7 +12,7 @@ CREATE TABLE customerinfo (
 ```
 Table created.
 
-## Insert Value in table
+## 2 Insert Value in table
 ```
 INSERT INTO customerinfo (customer_id, customer_name, salary)
 VALUES (1, 'John Doe', 5000);
@@ -33,18 +33,18 @@ VALUES (4, 'Emily Davis', 6200);
 1 row(s) inserted.
 
 1 row(s) inserted.
-## Check Column values
+## 3 Check Column values
 ```
 select * from customerinfo;
 ```
 ```
 customer_id	customer_name	    salary
-1	            john Doe	       5000
+1	            john Doe	     5000
 2	            Jane Smith	     5500
 3	            Michael Johnson	 6000
 4	            Emily Davis	     6200
 ```
-## Increase salary 100 every customer
+##  4 Increase salary 100 every customer
 
 Enable Server Output
 Once logged in, enable server output by running:
@@ -68,17 +68,17 @@ END;
 /
 ```
 4 customers selected
-## Check Column value
+## 5 Check Column value
 ```
 select * from customerinfo;
 ```
 output
 ```
 CUSTOMER_ID	CUSTOMER_NAME	    SALARY
-1	             john Doe	        5100
+1	             john Doe	      5100
 2	             Jane Smith	      5600
-3	             Michael Johnson	6100
-4	             Emily Davis	    6300
+3	             Michael Johnson  6100
+4	             Emily Davis	  6300
 ```
 
 Enable Server Output
@@ -86,7 +86,7 @@ Once logged in, enable server output by running:
 ```
 SET SERVEROUTPUT ON;
 ```
-This program essentially retrieves and displays all customers' IDs and names from the customer table.
+## This program essentially retrieves and displays all customers' IDs and names from the customer table.
 ```
 DECLARE
     CURSOR customer_cur IS
