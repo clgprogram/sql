@@ -1,6 +1,4 @@
-# sql
-
-## pl/sql: cursor ()
+# pl/sql: cursor
 
 ## 1 Create Table
 ```
@@ -107,3 +105,5 @@ BEGIN
 2 Jane Smith
 3 Michael Johnson
 4 Emily Davis
+
+# End of the program
